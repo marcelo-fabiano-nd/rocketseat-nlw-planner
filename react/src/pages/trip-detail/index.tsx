@@ -1,4 +1,4 @@
-import { Calendar, CircleCheck, MapPin, Plus, Settings2 } from "lucide-react";
+import { Calendar, CircleCheck, Link2, MapPin, Plus, Settings2 } from "lucide-react";
 
 export function TripDetailsPage() {
   return (
@@ -66,8 +66,38 @@ export function TripDetailsPage() {
           </div>
         </div>
 
-        <div className="w-80">
+        <div className="w-80 space-y-6">
+          <div className="space-y-6">
+            <h2 className="text-xl font-semibold">Links importante</h2>
+            <div className="space-y-5">
+              <div className="flex items-center justify-between gap-4">
+                <div className="space-y-1.5">
+                  <span className="block text-zinc-100 font-medium">Reserva do AirBnB</span>
+                  <a href="#" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">
+                    https://www.airbnb.com.br/rooms/104700011104700011104700011104700011104700011104700011104700011104700011
+                  </a>
+                </div>
+                <Link2 className="size-5 text-zinc-400 shrink-0" />
+              </div>
+              <div className="flex items-center justify-between gap-4">
+                <div className="space-y-1.5">
+                  <span className="block text-zinc-100 font-medium">Reserva do AirBnB</span>
+                  <a href="#" className="block text-xs text-zinc-400 truncate hover:text-zinc-200">
+                    https://www.airbnb.com.br/rooms/104700011104700011104700011104700011104700011104700011104700011104700011
+                  </a>
+                </div>
+                <Link2 className="size-5 text-zinc-400 shrink-0" />
+              </div>
+            </div>
+            <button className="bg-zinc-800 text-zinc-200 w-full justify-center rounded-lg px-5 h-11 font-medium flex items-center gap-2 hover:bg-zinc-700">
+              <Plus className="size-5" />
+              Cadastrar novo link
+            </button>
+          </div>
+          <div className="w-full h-px bg-zinc-800" />
+          <div>
 
+          </div>
         </div>
       </main>
     </div>
